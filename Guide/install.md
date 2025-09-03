@@ -50,6 +50,8 @@ brew install git
 xcode-select --install
 ```
 
+<br>
+
 ## ⚙️ Git 설정
 
 ### 필수 설정
@@ -104,6 +106,8 @@ git config --global pager.branch false
 git config --global pager.tag false
 ```
 
+<br>
+
 ## 🔍 설치 확인
 
 ### 버전 확인
@@ -120,6 +124,8 @@ git config --list
 git config user.name
 git config user.email
 ```
+
+<br>
 
 ## 🔐 SSH 키 설정 (GitHub 연동)
 
@@ -174,6 +180,8 @@ pbcopy < ~/.ssh/id_ed25519.pub
 ```bash
 ssh -T git@github.com
 ```
+
+<br>
 
 ## 🛠️ 개발 환경별 추가 설정
 
@@ -250,6 +258,8 @@ gcm "Update"    # 커밋
 gpom            # 메인 브랜치에 푸시
 ```
 
+<br>
+
 ## 🔧 유용한 Git 별칭 설정
 
 ```bash
@@ -272,6 +282,8 @@ git config --global alias.co checkout
 git config --global alias.unstage "reset HEAD --"
 ```
 
+<br>
+
 ## ✅ 설치 완료 체크리스트
 
 - [ ] Git 설치 완료
@@ -284,6 +296,8 @@ git config --global alias.unstage "reset HEAD --"
 - [ ] 에디터 설정 (선택사항)
 - [ ] 유용한 별칭 설정 (선택사항)
 
+<br>
+
 ## 🚀 다음 단계
 
 설치와 설정이 완료되었다면:
@@ -291,6 +305,8 @@ git config --global alias.unstage "reset HEAD --"
 1. **첫 번째 저장소 만들기**: `git init`
 2. **GitHub에서 저장소 클론**: `git clone [repository-url]`
 3. **기본 Git 워크플로우 학습**: add → commit → push
+
+<br>
 
 ## 📚 참고 자료
 
