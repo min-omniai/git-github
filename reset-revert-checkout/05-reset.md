@@ -11,7 +11,27 @@
 - 실제 작업 디렉토리 파일들과는 완전히 분리됨
 - .git 복원 = 히스토리만 복원, 파일 시스템은 건드리지 않음
 
-<br>
+
+### reset (전체 지우개)
+
+```mermaid
+gitGraph
+   commit id:"A"
+   commit id:"B"
+   commit id:"C"
+   branch reset_from_C
+   checkout reset_from_C
+   commit id:"D*"
+   commit id:"E*"
+   checkout main
+   commit id:"D"
+   commit id:"E"
+```
+
+- git reset --hard C → 브랜치 포인터가 C로 이동
+- 이후 커밋 D, E는 사라지고, 새로운 D*, E*를 다시 쌓음
+
+---
 
 ## 📌 실습에서 발견한 현상
 
