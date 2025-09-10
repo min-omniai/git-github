@@ -19,13 +19,15 @@ gitGraph
    commit id:"A"
    commit id:"B"
    commit id:"C"
-   branch reset_from_C
-   checkout reset_from_C
-   commit id:"D*"
-   commit id:"E*"
-   checkout main
    commit id:"D"
    commit id:"E"
+   branch dangling
+   checkout dangling
+   commit id:"D"
+   commit id:"E"
+   checkout main
+   commit id:"D*"
+   commit id:"E*"
 ```
 
 - git reset --hard C → 브랜치 포인터가 C로 이동
