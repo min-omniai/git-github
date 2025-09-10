@@ -23,8 +23,8 @@ gitGraph
    commit id:"E"
    branch dangling
    checkout dangling
-   commit id:"D"
-   commit id:"E"
+   commit id:"D" type: REVERSE
+   commit id:"E" type: REVERSE
    checkout main
    commit id:"D*"
    commit id:"E*"
