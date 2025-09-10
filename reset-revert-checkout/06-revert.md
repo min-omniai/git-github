@@ -12,7 +12,7 @@ gitGraph
    commit id:"C"
    commit id:"D"
    commit id:"E"
-   commit id:"C'"
+   commit id:"C′ (revert of C)"
 ```
 - git revert C → C의 변경사항을 취소하는 C' 커밋이 새로 추가
 - D, E는 그대로 유지됨
