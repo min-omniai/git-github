@@ -3,7 +3,19 @@
 ## 1. Revert란?
 - 특정 커밋에서 적용된 변경사항을 **되돌리되, 새로운 커밋으로 기록**하는 기능  
 - 원본 커밋은 그대로 남고, 반대 변경을 추가 커밋으로 쌓는 방식  
-- 협업 환경에서 안전하게 과거 변경을 취소할 때 사용  
+- 협업 환경에서 안전하게 과거 변경을 취소할 때 사용
+
+```mermaid
+gitGraph
+   commit id:"A"
+   commit id:"B"
+   commit id:"C"
+   commit id:"D"
+   commit id:"E"
+   commit id:"C'" type:REVERSE
+```
+- git revert C → C의 변경사항을 취소하는 C' 커밋이 새로 추가
+- D, E는 그대로 유지됨
 
 ---
 
