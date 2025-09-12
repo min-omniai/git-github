@@ -102,7 +102,7 @@ git rebase --abort
 
 ## Rebase 충돌 해결
 
-### 1. Rebase 시도
+### 1. Rebase 시도 (이어붙이기)
 ```bash
 git checkout feature
 git rebase main
@@ -146,6 +146,11 @@ gitGraph
     commit id: "main 수정"
     commit id: "feature 수정 (rebase됨)"
 ```
+
+| 명령어 | 의미 |
+|--------|------|
+| `git rebase main` | main 뒤에 현재 브랜치를 이어붙임 |
+| `git rebase feature` | feature 뒤에 현재 브랜치를 이어붙임 |
 
 ---
 
